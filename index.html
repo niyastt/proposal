@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Be Mine💕</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*// THE SCRIPT OF US
+			</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hey Love! 💖!<br />
+			Do you remember the first time our eyes met? 🌟<br />
+			<span class="comments">// A random day that became so special.. </span><br />
+			Since then, your smile, your eyes, your laugh, Your voice, your vibe… 💫;<br />
+			<span class="comments">// Everything feels like magic in my world..</span><br />
+			From strangers to soulmates..💕<br />
+			I know we don't had spent enough time,<br />
+			To know and understand each other ;<br />
+			But I got rest of my life to find out those mysteries. 💪✨;<br />
+			When i am with you i felt like,i am the happiest person alive ;<br />
+			I forget all my problems when i see your bright smile on your beautiful face,don't let smile fade away;<br />
+			<span class="comments">// The chit chat at evening are so special...</span><br />
+			I want to feel the same for rest of my life,;<br />
+			<br>
+			All I want to say is:<br />
+			Flow, I will love you forever;<br />
+			I just want to ask you that are you ready to bear me for the rest of your life, I am ready to takecare of you,will you takecare of me as your KUNJAVA...
+			It is your life your decision,I want you to make a decision on this<br />
+			<br>			
+			To state your decision, I want you to click on the heart below<br />  
+			<br>
+			<span id="heartspan">
+			<a href="index1.html"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Can you be with me FOREVER💕
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">-Niyas!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = createDate(2024, 9, 12);
+//together.setFullYear(2024,9,12);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

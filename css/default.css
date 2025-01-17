@@ -1,0 +1,174 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-size: 12px;
+  overflow: auto;
+}
+#mainDiv {
+  width: 100%;
+  height: 100%;
+}
+#loveHeart {
+  float: left;
+  width: 670px;
+  height: 625px;
+}
+#garden {
+  width: 100%;
+  height: 100%;
+}
+#elapseClock {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#words {
+  font-family: "sans-serif";
+  width: 500px;
+  font-size: 24px;
+  color: #666;
+}
+#messages {
+  display: none;
+  text-align: center;
+  font-size: 30px;
+}
+#elapseClock .digit {
+  font-family: "digit";
+  font-size: 40px;
+  text-align: center;
+}
+#loveu {
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 80px;
+  margin-right: 120px;
+  text-align: right;
+  display: none;
+}
+#loveu .signature {
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+#clickSound {
+  display: none;
+}
+#code {
+  float: left;
+  width: 440px;
+  height: 400px;
+  color: #ffffff;
+  font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New",
+    "sans-serif";
+  font-size: 12px;
+}
+#code .string {
+  color: #2a36ff;
+}
+#code .keyword {
+  color: #7f0055;
+  font-weight: bold;
+}
+#code .placeholder {
+  margin-left: 15px;
+}
+#code .space {
+  margin-left: 7px;
+}
+#code .comments {
+  color: #3f7f5f;
+}
+#copyright {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #666;
+}
+#errorMsg {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+#copyright a {
+  color: #666;
+}
+#icon {
+  font-size: 48px;
+  color: red;
+  margin: 50 px;
+  align-content: center;
+}
+#heartspan {
+  align-content: center;
+  text-align: center;
+  margin: 20px;
+}
+button {
+--glow-color:rgb(217,176,255);
+--glow-spread-color:rgba(191,123,255,0.781);
+--enhanced-glow-color:rgb(231,206,255);
+--btn-color:rgb(100,61,136);
+border: 0.25 solid var(--glow-color);
+padding: 1em 3em;
+color: var(--glow-color);
+font-size: 15px;
+font-weight: bold;
+background-color: var(--btn-color);
+border-radius: 1em;
+outline: none;
+box-shadow: 0 0 1em 0.25em var(--glow-color),
+   0 0 4em 1em var(--glow-spread-color),
+   inset 0 0 0.75em 0.25em var(--glow-color);
+text-shadow: 0 0 0.5em var(--glow-color);
+position: relative;
+transition: all 0.3s;
+}
+button::after{
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);  
+}
+button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+.wrapper{
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #666;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-group{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
